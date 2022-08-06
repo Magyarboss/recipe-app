@@ -1,6 +1,6 @@
 package guru.springframework.recipeapp.model;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.HashSet;
