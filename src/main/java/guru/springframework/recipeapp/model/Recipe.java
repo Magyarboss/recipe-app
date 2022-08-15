@@ -37,7 +37,7 @@ public class Recipe {
     @Enumerated(value = EnumType.STRING)
     private Difficulty difficulty;
     @ManyToMany
-    @JoinTable(name = "recipe_category", joinColumns = @JoinColumn(name = "recipe_id"), inverseJoinColumns = @JoinColumn(name = "category_id"))
+    @JoinTable(name = "recipe_category", joinColumns = @JoinColumn(name = "recipe_id"), inverseJoinColumns = @JoinColumn(name = "category_id"))  // da li je potrebno ovo navidit ime tablice i imenaredova? jer hibernet(ili baza) automatski to napravi?
     private Set<Category> categories = new HashSet<>();
 
 
